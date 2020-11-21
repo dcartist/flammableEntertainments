@@ -11,6 +11,7 @@ function Episode(props){
         <Ingredients {...item.ingredients}></Ingredients>
         <Tools {...item.tools}></Tools>
         <Instruction instructions = {item.instructions}></Instruction>
+        {item.alcohol? <p>This drink contains alcohol.</p>:<p>This drink contains no alcohol.</p>}
     </div>))}
         </div>
     )
