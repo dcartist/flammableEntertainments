@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import {Route, useParams} from "react-router-dom";
+import {Route} from "react-router-dom";
 import EpsidodeListing from "./Components/Episodes/EpisodeListing"
 import Episode from "./Components/Episodes/EpisodeMain"
 function App() {
@@ -10,6 +9,8 @@ function App() {
       <Route path="/episode" exact component={EpsidodeListing}></Route>
       <Route path="/episode/id/:id" component={Episode}></Route>
     </div>
+
+  
   );
 }
 
