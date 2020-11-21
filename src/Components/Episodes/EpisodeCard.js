@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function EpisodeCard(props){
     return (
-        <div>
+        <div key={props.key}>
             <h3>
             {props.acf.title}
             </h3>

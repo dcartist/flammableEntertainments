@@ -20,7 +20,7 @@ class EpisodeListing extends Component {
         console.log(this.state.epsidodes)
         return (
             <div>
-                {this.state.epsidodes.map((item, index)=><div key={index}><Episode {...item}></Episode></div>)}
+                {this.state.epsidodes.map((item, index)=><div key={index}><Episode {...item} key={index}></Episode></div>)}
             </div>
         );
     }
