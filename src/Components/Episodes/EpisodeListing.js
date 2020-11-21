@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Episode from "./Epsidode"
+import Episode from "./EpisodeCard"
 import axios from 'axios';
 class EpisodeListing extends Component {
     constructor(){
@@ -20,7 +20,7 @@ class EpisodeListing extends Component {
         console.log(this.state.epsidodes)
         return (
             <div>
-                {this.state.epsidodes.map((item, index)=><div key={index}><Episode {...item.acf}></Episode></div>)}
+                {this.state.epsidodes.map((item, index)=><div key={index}><Episode {...item}></Episode></div>)}
             </div>
         );
     }
