@@ -13,14 +13,14 @@ class Navigation extends Component {
     return (
         <div className="NavBackground">
             <div> <img src={process.env.PUBLIC_URL + '/images/flammablehorizon_cropped.gif'} /></div>
-            <div> <Menu>
+            <div> <Menu stackable size='medium'>
         <Menu.Item
           name='home'
           as={Link}
             to="/"
           active={activeItem === 'home'}
           onClick={this.handleItemClick}
-        >
+        ><Icon name='home' />
           Home
         </Menu.Item>
 
