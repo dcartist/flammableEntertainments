@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+.NavBackground{
+  width: 100%;
+  background-color: black;
+  text-align: left;
+}
+.NavBackground img{
+  width: 340px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
