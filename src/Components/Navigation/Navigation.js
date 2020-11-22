@@ -9,7 +9,6 @@ class Navigation extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
     render(){
         const { activeItem } = this.state
-
     return (
         <div className="NavBackground">
             <div> <img src={process.env.PUBLIC_URL + '/images/flammablehorizon_cropped.gif'} /></div>
