@@ -9,6 +9,19 @@
 .NavBackground img{
   width: 340px;
 }
+.homeBase{
+  flex-flow: column;
+  height: 81vh;
+  flex:auto;
+  background-color: black;
+  background-position: center -300px;
+  background-size: cover;
+}
+.homeBackground{
+  /* background-color: black; */
+  display: flex;
+ 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
