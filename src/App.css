@@ -20,11 +20,15 @@ html, body #full{
 }
 .episodeList{
   margin: 0;
-  padding-left:10%;
+  /* padding-left:10%; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* background-color: red; */
 }
 
 .episodeListCard{
   padding-top: 15px;
+  margin:auto;
 }
 
 #base{
@@ -108,4 +112,16 @@ svg{
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .episodeList{
+    margin: 0;
+    /* padding-left:10%; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* background-color: red; */
+  }
+
 }
