@@ -10,7 +10,8 @@ function Episode(props){
             
             <h1>{props.title}</h1>
             <p>Episode #{props.episode_num}</p>
-            {props.episode_description}
+            <p>{props.episode_description}</p>
+            
             <Video {...props}></Video>
     {props.drinks.map((item, index)=>(<div className="drinkIndividualList" key={index}>
         <Header as='h3' floated='left'>
