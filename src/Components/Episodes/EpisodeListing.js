@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Episode from "./EpisodeCard"
 import axios from 'axios';
+import { Icon } from 'semantic-ui-react'
+
 class EpisodeListing extends Component {
     constructor(){
         super()
@@ -18,11 +20,20 @@ class EpisodeListing extends Component {
     }
     render() {
         console.log(this.state.epsidodes)
-        return (
+        if (this.state.epsidodes.length === 0 ) {return (
             <div>
-                {this.state.epsidodes.map((item, index)=><div key={index}><Episode {...item} key={index}></Episode></div>)}
+                <Icon.Group size='huge'>
+      <Icon loading size='huge' name='square outline' color='red' />
+               <Icon color='red' name='fire' size='big'/>
+      
+    </Icon.Group>
             </div>
-        );
+        );} else 
+        {return (
+            <div className="episodeList">
+                {this.state.epsidodes.map((item, index)=><div className="episodeListCard" key={index}><Episode {...item} key={index}></Episode></div>)}
+            </div>
+        );}
     }
 }
 

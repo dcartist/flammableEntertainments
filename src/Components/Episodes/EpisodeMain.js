@@ -20,7 +20,10 @@ class EpisodeMain extends Component {
 
 	render() {
 		if (this.state.episodeData.length == 0) {
-			return <div />;
+			return (<div> 
+				Loading... 
+			<img src={process.env.PUBLIC_URL + '/images/drinkglass.gif'}/>
+			</div>)
 		} else if (this.state.episodeData.acf) {
 			if (this.state.episodeData.acf.episode_num == null) {
 				return <div>sorry</div>;

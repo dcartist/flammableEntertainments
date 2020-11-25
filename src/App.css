@@ -1,30 +1,83 @@
+
 .App {
   text-align: center;
+  width: 100%;
+  display: grid;
+  height: 100vh;
+  grid-column: 1fr auto-fill;
+}
+html, body #full{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.drinkIndividualList{
+  padding-top: 30px;;
+}
+#full {
+  display: flex;
+  flex-direction: column;
+}
+.episodeList{
+  margin: 0;
+  padding-left:10%;
+}
+
+.episodeListCard{
+  padding-top: 15px;
+}
+
+#base{
+  flex-grow: 1;
 }
 .NavBackground{
   width: 100%;
   background-color: black;
   text-align: left;
+  /* height: 12vh; */
 }
 .NavBackground img{
   width: 340px;
 }
 .homeBase{
-  flex-flow: column;
-  height: 81vh;
-  flex:auto;
+  /* flex-flow: column; */
+  min-height:80vh;
+  /* max-height: 95vh; */
+  /* flex-grow: 1; */
+  display:block;
+
   background-color: black;
-  background-position: center -300px;
-  background-size: cover;
+  background-position: center -500px;
+  background-repeat: no-repeat;
+  background-size: 130%;
+  overflow: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.homeBase::-webkit-scrollbar {
+  display: none;
 }
 .homeBackground{
   /* background-color: black; */
   display: flex;
+
  
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+svg{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  /* display:inline-block; */
+}
+.EpisodeBase{
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

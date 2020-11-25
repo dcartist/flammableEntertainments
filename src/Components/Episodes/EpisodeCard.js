@@ -1,13 +1,22 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { Card, Segment, Header } from 'semantic-ui-react'
 
 function EpisodeCard(props){
     return (
         <div key={props.key}>
-            <h3>
-            {props.acf.title}
-            </h3>
-            <Link to={"/episode/id/"+props.id}>Epsiode{props.id}</Link>
+             <Link to={"/episode/id/"+props.id}>
+            <Card raised>
+            <Card.Content>
+            <Segment inverted fluid color="black"><Header as="h4">{props.acf.title}</Header></Segment>
+        {/* <Card.Header color="black" inverted>{props.acf.title}</Card.Header> */}
+    <Card.Meta>Episode #{props.acf.episode_num}</Card.Meta>
+        <Card.Description>
+         {props.acf.episode_description}
+        </Card.Description>
+      </Card.Content>
+            </Card>
+           </Link>
         </div>
     )
 }
