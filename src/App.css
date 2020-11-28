@@ -34,6 +34,7 @@ html, body #full{
   padding-top: 0;
   justify-items: center;
   column-gap: 50px;
+  row-gap: 25px;
 }
 
 .EpisodeLoading{
