@@ -30,7 +30,9 @@ html, body #full{
   padding-top: 15px;
   margin:auto;
 }
-
+.EpisodeListImage{
+  height: 150px;
+}
 #base{
   flex-grow: 1;
 }
