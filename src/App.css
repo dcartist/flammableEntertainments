@@ -181,7 +181,9 @@ svg{
     width: 100%;
   }
   
-
+  .EpisodeBase h1{
+    font-size: 3rem;
+   }
 }
 
 
@@ -197,6 +199,13 @@ svg{
     column-gap: 50px;
     row-gap: 25px;
   }
+  .NoVideoAvailable{
+    width: 100%;
+  }
+  .EpisodeBase h1{
+    font-size: 3rem;
+   }
+  
 }
 
 @media only screen and (min-width: 992px) {
@@ -211,4 +220,8 @@ svg{
   column-gap: 50px;
   row-gap: 25px;
 }
+.NoVideoAvailable{
+  width: 100%;
+}
+
 }
