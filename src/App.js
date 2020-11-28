@@ -9,7 +9,7 @@ import Navigation from "./Components/Navigation/Navigation"
 
 function App() {
   return (
-    <div className="App" id="full">
+    <div className="App">
       <Navigation className="AppNav"></Navigation>
       <Route path="/" exact component={Home}></Route>
       <Route path="/about" component={About}></Route>
