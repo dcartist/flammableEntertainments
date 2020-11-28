@@ -10,7 +10,7 @@
 .App {
   text-align: center;
   width: 100% !important;
-  /* display: flex; */
+  display: flex;
   height: 100%;
   min-height: 100%;
   flex-direction: column;
@@ -186,10 +186,29 @@ svg{
 
 
 @media only screen and (min-width: 600px) { 
+
   .episodeList{
-  margin: 0;
-  /* padding-left:10%; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    padding-top: 0;
+    justify-items: center;
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+ 
+.episodeList{
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* background-color: red; */
-}}
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+  padding-top: 0;
+  justify-items: center;
+  column-gap: 50px;
+  row-gap: 25px;
+}
+}
