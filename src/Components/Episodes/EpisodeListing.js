@@ -21,9 +21,9 @@ class EpisodeListing extends Component {
     render() {
         console.log(this.state.epsidodes)
         if (this.state.epsidodes.length === 0 ) {return (
-            <div>
+            <div className="EpisodeLoading">
                 <Icon.Group size='huge'>
-      <Icon loading size='huge' name='square outline' color='red' />
+      <Icon loading size='huge' name='square outline' color='black' />
                <Icon color='red' name='fire' size='big'/>
       
     </Icon.Group>
