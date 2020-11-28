@@ -19,19 +19,26 @@ html, body #full{
   flex-direction: column;
 }
 .episodeList{
-  margin: 0;
+  margin: auto;
+
   /* padding-left:10%; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* background-color: red; */
+  margin-top: 20px;
+  padding-top: 0;
+  justify-items: center;
 }
 
 .episodeListCard{
-  padding-top: 15px;
-  margin:auto;
+  /* padding-top: 10px; */
+  margin: 0;
 }
 .EpisodeListImage{
-  height: 150px;
+  height: 200px !important;
+  width: auto;
+  background-size: cover;
+  
 }
 #base{
   flex-grow: 1;
