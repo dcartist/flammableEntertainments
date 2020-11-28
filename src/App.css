@@ -79,11 +79,43 @@ svg{
   /* display:inline-block; */
 }
 .EpisodeBase{
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding-bottom: 50px;
 }
 
+.EpisodeBase h1{
+ font-size: 5rem;
+}
+.EpisodeSegmentHead{
+  background-color: black !important;
+  color: white;
+}
+.EpisodeDivider{
+  height:20px;
+}
+
+.ui.horizontal.divider:after, .ui.horizontal.divider:before {
+  background-color: white;
+
+}
+
+.ui.divider.inverted:before{
+  /* padding-right: 30px !important; */
+  right: 10px;
+}
+.ui.divider.inverted:after{
+  /* padding-right: 30px !important; */
+  left: 10px;
+}
+.ui.divider.inverted, .ui.divider.inverted:after, .ui.divider.inverted:before {
+  border-width: 3px;
+  border-top-color: rgba(184, 184, 184, 0.15)!important;
+  border-left-color: rgba(84, 184, 184, 0.15)!important;
+  border-bottom-color: rgba(255, 255, 255, 0.568)!important;
+  border-right-color: rgba(8, 8, 8, 0.993)!important;
+  height: 15px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -123,5 +155,18 @@ svg{
     grid-template-columns: repeat(1, 1fr);
     /* background-color: red; */
   }
+  .EpisodeBase h1{
+    font-size: 2rem;
+   }
+  .EpisodeBase{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+  .NoVideoAvailable{
+    width: 100%;
+  }
+  
 
 }
