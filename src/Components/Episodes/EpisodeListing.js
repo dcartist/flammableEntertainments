@@ -13,7 +13,6 @@ class EpisodeListing extends Component {
     componentDidMount(){
         axios.get("https://www.flameableent.com/wp-json/acf/v3/posts").then(
             results => {
-                // console.log(results.data)
                 this.setState({epsidodes: results.data})
             }
         )
