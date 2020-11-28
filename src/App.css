@@ -29,16 +29,13 @@ html, body #full{
 .episodeList{
   margin: auto;
   display: grid;
-  /* flex-direction: row; */
   grid-template-columns: repeat(3, 1fr);
   margin-top: 20px;
   padding-top: 0;
   justify-items: center;
   column-gap: 50px;
 }
-.episodeList > div {
-  flex: 1;
-}
+
 .EpisodeLoading{
   height: 100%;
   display: flex;
