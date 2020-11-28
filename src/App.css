@@ -1,10 +1,18 @@
 
+*{
+  box-sizing: border-box;
+}
+#root {
+  height: 100%;
+}
 .App {
   text-align: center;
   width: 100%;
-  display: grid;
-  height: 100vh;
-  grid-column: 1fr auto-fill;
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  /* grid-column: 1fr auto-fill; */
 }
 html, body #full{
   width: 100%;
@@ -20,25 +28,29 @@ html, body #full{
 }
 .episodeList{
   margin: auto;
-
-  /* padding-left:10%; */
   display: grid;
+  /* flex-direction: row; */
   grid-template-columns: repeat(3, 1fr);
-  /* background-color: red; */
   margin-top: 20px;
   padding-top: 0;
   justify-items: center;
+  column-gap: 50px;
 }
-
+.episodeList > div {
+  flex: 1;
+}
 .episodeListCard{
   /* padding-top: 10px; */
   margin: 0;
 }
-.EpisodeListImage{
+.EpisodeListImage {
   height: 200px !important;
   width: auto;
   background-size: cover;
   
+}
+.ui.card, .ui.cards>.card{
+  min-height: 380px !important;
 }
 #base{
   flex-grow: 1;
@@ -53,29 +65,17 @@ html, body #full{
   width: 340px;
 }
 .homeBase{
-  /* flex-flow: column; */
-  min-height:80vh;
-  /* max-height: 95vh; */
-  /* flex-grow: 1; */
-  display:block;
-
+  height: 100%;
   background-color: black;
-  background-position: center -500px;
+  /* background-position: center -500px; */
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 130%;
+  background-size: cover;
   overflow: hidden;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-.homeBase::-webkit-scrollbar {
-  display: none;
-}
-.homeBackground{
-  /* background-color: black; */
-  display: flex;
 
- 
-}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

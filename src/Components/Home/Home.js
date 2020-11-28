@@ -10,7 +10,7 @@ class Home extends Component {
             <div className="homeBase" style={divBackground}>
                 
                 <div className="homeBackground"></div>
-                HOME
+             
                     {/* <img src={process.env.PUBL
                         IC_URL + '/images/flammablehorizon_cropped.gif'} />  */}
             </div>
