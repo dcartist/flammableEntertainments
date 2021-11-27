@@ -82,6 +82,7 @@ html, body{
 
 .tester{
   min-height: 1000px;
+  padding-top: 100px;
 }
 
 .App-logo {
