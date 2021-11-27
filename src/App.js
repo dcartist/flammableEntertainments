@@ -5,7 +5,7 @@ import Episode from "./Components/Episodes/EpisodeMain"
 import Home from "./Components/Home/Home"
 import About from "./Components/About/About"
 import Navigation from "./Components/Navigation/Navigation"
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 import "./style.scss"
 function App() {
   return (

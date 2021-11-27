@@ -8,7 +8,7 @@
   width: 100vw;
 }
 .App {
-  text-align: center;
+  /* text-align: center; */
   width: 100% !important;
   display: flex;
   height: 100%;
@@ -64,8 +64,25 @@ html, body{
   background-color: black;
   text-align: left;
   min-width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
   /* height: 12vh; */
 }
+.NavBackground ul {
+  margin-top: 20px;
+}
+.NavBackground  ul li{
+  
+  display: inline;
+  padding: 5px 10px;
+
+}
+.NavBackground  ul li a{
+  color: white;
+
+}
+
 .NavBackground img{
   width: 340px;
 }
@@ -80,6 +97,10 @@ html, body{
   scrollbar-width: none;  /* Firefox */
 }
 
+.showcaseImage{
+  background-position: center;
+  background-size: cover;
+}
 .tester{
   min-height: 1000px;
   padding-top: 100px;

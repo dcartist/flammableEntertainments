@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 // import { Menu } from 'semantic-ui-react'
 import { Header, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import {Link} from 'react-scroll'
 class Navigation extends Component {
     state = {}
 
@@ -13,44 +14,17 @@ class Navigation extends Component {
         <div className="NavBackground">
             <div> <img src={process.env.PUBLIC_URL + '/images/flammablehorizon_cropped.gif'} /></div> 
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/">Home</Link></li>
-              <AnchorLink href='#things'>Things</AnchorLink>
+              {/* <li><Link to="/">Home</Link></li> */}
+              <li><Link  to="things" spy={true} smooth={true}>Home</Link></li>
+              <li><Link to="stuff"  spy={true} smooth={true}>Home</Link></li>
+
+              
+              {/* <AnchorLink href='#things'>Things</AnchorLink> */}
     <AnchorLink href='#stuff'>Stuff</AnchorLink>
+    <AnchorLink href='#thistest'>Stuff</AnchorLink>
               </ul>
             
-            <div> <Menu stackable size='medium'>
-        <Menu.Item
-          name='home'
-          as={Link}
-            to="/"
-          active={activeItem === 'home'}
-          onClick={this.handleItemClick}
-        ><Icon name='home' />
-          Home
-        </Menu.Item>
-
-        <Menu.Item
-          name='about'
-          as={Link}
-            to="/about"
-          active={activeItem === 'about'}
-          onClick={this.handleItemClick}
-        >
-          About
-        </Menu.Item>
-
-        <Menu.Item
-          name='episodes'
-          as={Link}
-            to="/episode"
-          active={activeItem === 'episodes'}
-          onClick={this.handleItemClick}
-        >
-          Episodes
-        </Menu.Item>
-      </Menu></div>
+           
         </div>
      
     )

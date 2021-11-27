@@ -1,79 +1,63 @@
 import React from 'react'
 
+import { Card, Button } from "react-bootstrap";
+
 export default function EpisodeShowcase(props) {
     console.log(props.Photo)
     if (props.Photo === undefined) {
         return (
             <div>
-    <div class="columns has-text-centered" id="blog-card">
-        <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
-            <div class="image is-16by9" style={{backgroundColor:"blue"}}></div>
-            {/* <div className="image is-16by9" style={{backgroundImage: `url({props.Photo})`}}></div> */}
+    <div className="card mb-3" style={{minWidth: '500px'}}>
+      <div className="row no-gutters">
+        <div className="col-md-4">
+          <svg
+            className="bd-placeholder-img"
+            width="100%"
+            height="350"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Placeholder: Image"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96" />
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+              Image
+            </text>
+          </svg>
         </div>
-        <a href="#">
-            <div class="column has-text-left-desktop has-text-left-tablet">
-                <h1 class="title is-size-4-touch">{props.showTitle}</h1>
-                <div class="content has-text-grey">
-                    newsLine descriptions
-                    {/* <hr class="has-background-grey"> </hr> */}
-                    <span class="has-text-grey">Published on <span class="has-text-weight-semibold">date</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">text min</span> read
-                </div>
-            </div>
-        </a>
-    </div>
-    {/* <section class="hero is-fullheight has-text-centered" id="hero">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
-          Title
-          </h1>
-          <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
-            Description
-          </h3>
-          <hr></hr>
-          <a href="#"
-            class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Read More</a>
+        <div className="col-md-8">
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
+              Card Text
+            </p>
+            <p className="card-text">
+              <small className="text-muted">Card Text 2</small>
+            </p>
+          </div>
         </div>
       </div>
-    </section> */}
+    </div>
                 
             </div>
         )
     } else {
         return (
             <div>
-    <div class="columns has-text-centered" id="blog-card">
-        <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
-            {/* <div class="image is-16by9" style={{backgroundColor:"red"}}></div> */}
-            <div className="image is-16by9" style={{backgroundImage: `url(${props.Photo})`}}></div>
-        </div>
-        <a href="#">
-            <div class="column has-text-left-desktop has-text-left-tablet">
-                <h1 class="title is-size-4-touch">{props.showTitle}</h1>
-                <div class="content has-text-grey">
-                    newsLine descriptions
-                    {/* <hr class="has-background-grey"> </hr> */}
-                    <span class="has-text-grey">Published on <span class="has-text-weight-semibold">date</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">text min</span> read
-                </div>
-            </div>
-        </a>
-    </div>
-    {/* <section class="hero is-fullheight has-text-centered" id="hero">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
-          Title
-          </h1>
-          <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
-            Description
-          </h3>
-          <hr></hr>
-          <a href="#"
-            class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Read More</a>
-        </div>
-      </div>
-    </section> */}
-                
+<Card border="secondary">
+<Card.Title> <h2>{props.showTitle}</h2></Card.Title>
+    <Card.Body  style={{ backgroundImage: `url(${props.Photo})`, height: "300px" }} className="showcaseImage"></Card.Body>
+    <Card.Body>
+      <Card.Text>
+      <p>{props.showDescription}</p>
+      </Card.Text>
+      
+                    <p> drinks listed: </p>
+                    <ul> {props.DrinkList.map((item, index) => <li> {item.drinkName} </li>)}</ul>
+    </Card.Body>
+    <Button variant="secondary">Go somewhere</Button>
+  </Card>
             </div>
         )
     }
