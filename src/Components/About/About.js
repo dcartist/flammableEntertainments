@@ -9,14 +9,20 @@ class About extends Component {
             results:""
         }
     }
-    componentDidMount(){
-        axios.get('https://flameableent.com/wp-json/wp/v2/pages/48').then(results=>this.setState({results: results.data.content.rendered}))
-    }
-    render() {
+   
+    render() {  
         console.log(this.state.results)
         return (
             <div>
-               {parse(this.state.results)} 
+                <h2>HOST</h2>
+                <p>
+                Tor Johnson, geek and drink connoisseur.
+                </p>
+                 <img src={`${process.env.PUBLIC_URL}/images/torJohnson.jpeg`}></img>
+
+                 <h2>Lovely Assistant</h2>
+                 <p>Fun-loving enjoyable assistant</p>
+                 <img src={`${process.env.PUBLIC_URL}/images/thumbsup.png`} className="thumbsup"></img>
             </div>
         );
     }

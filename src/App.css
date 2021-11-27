@@ -85,6 +85,9 @@ html, body{
   pointer-events: none;
 }
 
+.thumbsup{
+  height: 150px;
+}
 svg{
   width: 100px;
   height: 100px;
