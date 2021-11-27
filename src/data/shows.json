@@ -1,0 +1,81 @@
+[
+    {
+        "showTitle": "The Purple South",
+        "showDate": "",
+        "showDescription": "A traditional beverages of the south and track.",
+        "Video_url": "",
+        "Photo": "https://www.thecocktaildb.com/images/media/drink/squyyq1439907312.jpg",
+        "Episode_num": 1,
+        "Length": 0,
+        "Recap": false,
+        "DrinkList": [
+            {
+                "drinkName": "The Mint Julep",
+                "Glass": "Short Glass",
+                "Type": "Alcohol",
+                "ingredients": [
+                    "Bourbon",
+                    "Mint Leaves",
+                    "Simple Syrup ^1",
+                    "Crushed Ice",
+                    "Optional: Bitters ^3"
+                ],
+                "tools": [
+                    "Old Fashioned Glass / Short Glass",
+                    "Spoon",
+                    "Muddler ^8",
+                    "Jigger ^4"
+                ],
+                "instructions": "Fill a julep cup two-thirds full with crushed ice. Add bourbon and simple syrup, stir briefly to blend. At the last moment cut the stems short on the mint and pack into the glass. Insert two straws so that the ends barely reach over the top of the mint. Let the drink stand approximately one minute before serving.",
+                "Photo": "https://www.thecocktaildb.com/images/media/drink/squyyq1439907312.jpg"
+            },
+            {
+                "drinkName": "The Aviation",
+                "Glass": "Cocktail Glass",
+                "Type": "Alcohol",
+                "ingredients": [
+                    "Maraschino Liquer",
+                    "Lemon Juice",
+                    "Gin",
+                    "Crème de Violette",
+                    "Maraschino or Brandied Cherry ^2"
+                ],
+                "tools": [
+                    "Shaker",
+                    "Ice",
+                    "Strainer",
+                    "Cocktail Glass (optional)",
+                    "Jigger ^4"
+                ],
+                "instructions": "Fill cocktail shaker with ice. Juice the lemon and add to the shaker. Add a little sugar, if desired. Pour in gin and maraschino, and shake. Serve straight up in a cocktail glass.",
+                "Photo": ""
+            },
+            {
+                "drinkName": "",
+                "ingredients": [],
+                "tools": [],
+                "instructions": ""
+            },
+            {
+                "drinkName": "",
+                "Glass": "",
+                "Type": "",
+                "ingredients": [],
+                "tools": [],
+                "instructions": "",
+                "Photo": ""
+            }
+        ],
+        "Notes": [
+            "Simple Syrup is a made from sugar and hot water in a 1:1 mix (allow to cool before using)",
+            "Cocktail maraschino cherries are dark burgundy and not the same as the cherries used on ice cream",
+            "This can be angostura or any ‘aromatic’ bitters",
+            "Or ANY measure that can do liquid ounces in small amounts – ¼, ½, ¾, 1, 1 ½ ",
+            "This drink can also be made with pure cognac and the rye omitted",
+            "Alternatives are Pastis, Anisette, or Herbsaint",
+            "Do NOT substitute another type of bitters",
+            "Alternatives to a muddler are a pestle or a spoon",
+            "Chill glass in advance"
+        ]
+    }
+]

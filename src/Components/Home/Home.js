@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Showcase from "../Episodes/EpisodeShowcase"
 class Home extends Component {
    
     render() {
@@ -12,6 +12,7 @@ class Home extends Component {
                 <div className="homeBackground"></div>
                 </div>
                 <section id='things' className="tester">
+                    <Showcase></Showcase>
       <h2>Things</h2>
     </section>
     <section id='stuff' className="tester">
